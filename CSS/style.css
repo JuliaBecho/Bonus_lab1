@@ -51,7 +51,7 @@ header {
     .list-group {
         float: right;
         width: 80%;
-        max-width: 800px; 
+        
       }
 
       .card-info p {
@@ -63,7 +63,7 @@ header {
             border: 2px solid #2f2f30; 
             padding: 5px 10px; 
             border-radius: 10px; 
-            margin-left: 380px; 
+            margin-left: 120px; 
             color: #ffffff; 
             background-color: #6c757d; 
         }
@@ -71,5 +71,8 @@ header {
         footer{
             text-align: center;
         }
+
+      
+        
         
         
