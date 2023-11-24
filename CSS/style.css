@@ -47,4 +47,16 @@ header {
         text-align: right; 
       }
 
-    
+      .card-info p {
+        
+        margin: 0;
+        padding: 0;  }
+
+        .card-number {
+            border: 2px solid #2f2f30; 
+            padding: 5px 10px; 
+            border-radius: 10px; 
+            margin-left: 5px; 
+            color: #ffffff; 
+            background-color: #6c757d; 
+        }
