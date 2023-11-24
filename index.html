@@ -8,6 +8,7 @@
     <title>Checkout formt</title>
 </head>
 <body>
+    
     <header class="center">
         <img src="./IMAGES/CCTBLogo.png" alt="CCTB logo" height="70px" width="320px">
         <h1>Checkout form</h1>  
@@ -17,7 +18,8 @@
     <article>
         <div>
             <form action="" method="post">
-                <p>Billing Address </p>
+                <h2>Billing Address</h2>
+            </div>
          
                 <div class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">Date</label>
@@ -32,29 +34,148 @@
                       <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
                     </div>
                   </div>
-                 </form>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="you@example.com">
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Adress</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="1234 Main St">
+                  </div>
+                  <div class="col-12">
+                    <label for="formGroupExampleInput" class="form-label">Username</label>
+                    <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+                    </div>
 
-                
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Adress 2 (Optional)</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Apartment or suite">
+                      </div>
 
 
-                 <form class="row row-cols-lg-auto g-3 align-items-center">
-                    <div class="col-12">
-                      <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-                      <div class="input-group">
-                        <div class="input-group-text">@</div>
-                        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <label for="inputCountry" class="form-label">Country</label>
+                            <select id="inputCountry" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>Country 1</option>
+                              <option>Country 2</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>State 1</option>
+                              <option>State 2</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                        </div>
                       </div>
                     
-                      <div>
-                        <label>Email</label>
-                        <input type="email" nome="email" id="email">
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck1">
+                              <label class="form-check-label" for="gridCheck1">Shipping address is the same as my billing address</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck2">
+                              <label class="form-check-label" for="gridCheck2">Save this information for next time</label>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                  </form>
-        </div>
+
+                    <hr>
+                    <div>
+                        <h3>Payment</h3>
+                    </div>
+                    <fieldset class="row mb-3">
+                        
+                        <div class="col-sm-10">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                              Credit card
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                              Debit card 
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                              Paypal
+                            </label>
+                          </div>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6 mx-auto">
+                                <label for="inputNameOnCard" class="form-label">Name on card</label>
+                                <input type="text" class="form-control" id="inputNameOnCard">
+                              </div>
+                              <div class="col-md-6 mx-auto">
+                                <label for="inputCreditCardNumber" class="form-label">Credit card number</label>
+                                <input type="text" class="form-control" id="inputCreditCardNumber">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <label for="inputExpiration" class="form-label">Expiration</label>
+                                <input type="text" class="form-control" id="inputExpiration">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="inputCVV" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="inputCVV">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="button">Continue to Checkout</button>
+                            </div>
+                          
+                        
+                    
+
+
+                            
+                    
+                  
+                 </form>
+
+               
+                      
+                  
+
+
+               
+        
 
         <fieldset>
             <div>
-                <p>Your card </p>
+                <p>Your card</p>
                 <p>3</p>
             </div>   
         </fieldset>
